@@ -1,7 +1,7 @@
 
 
-test_string_1 = "Hello, world, Space, Fuck, Duck"
-test_string_2 = "1234567890"
+# test_string_1 = "Hello, world, Space, Fuck, Duck"
+# test_string_2 = "1234567890"
 
 # print(test_string_1.find("u"))
 # print(test_string_1.rfind("l"))
@@ -19,9 +19,26 @@ test_string_2 = "1234567890"
 # print(test_string_1.islower())
 # print(test_string_1.isupper())
 
-products = ["Молоко", "Сыр", "Мясо"]
-print(*products, sep=', ', end='\n')
-print(*products, sep=' + ', end=' = ')
-print("1500")
-print(" , ".join(products) + " = 1500")
-print(test_string_1.replace("world", "Peace"))
+# products = ["Молоко", "Сыр", "Мясо"]
+# print(*products, sep=', ', end='\n')
+# print(*products, sep=' + ', end=' = ')
+# print("1500")
+# print(" , ".join(products) + " = 1500")
+# print(test_string_1.replace("world", "Peace"))
+
+# Срезы строк
+
+# name = "John"
+#
+# print(name[0])
+# print(name[1])
+# print(name[-1])
+#
+# # [start:stop:step]
+#
+#
+# print(name[:2:]) # - Jo
+# print(name[2::]) # - hn
+# print(name[::2]) # - Jh
+# print(name[::-1])
+
