@@ -47,18 +47,62 @@
 # Если пользователь ввел число не в диапазоне от 0 до 100 или введено нечисловое значение,
 # программа должна вывести: "Некорректное значение"
 
-score = int(input("Введите ваш балл по экзамену (от 0 до 100): "))
+# score = int(input("Введите ваш балл по экзамену (от 0 до 100): "))
 
 # Проверяем диапазон балла и выводим соответствующую оценку
-if 90 <= score <= 100:
-    print("Ваша оценка: A")
-elif 80 <= score <= 89:
-    print("Ваша оценка: B")
-elif 70 <= score <= 79:
-    print("Ваша оценка: C")
-elif 60 <= score <= 69:
-    print("Ваша оценка: D")
-elif 0 <= score < 60:
-    print("Ваша оценка: F")
-else:
+# if 90 <= score <= 100:
+#     print("Ваша оценка: A")
+# elif 80 <= score <= 89:
+#     print("Ваша оценка: B")
+# elif 70 <= score <= 79:
+#     print("Ваша оценка: C")
+# elif 60 <= score <= 69:
+#     print("Ваша оценка: D")
+# elif 0 <= score < 60:
+#     print("Ваша оценка: Ты дебил!!!")
+# else:
+#     print("Некорректное значение")
+
+# name = "Alexandr"
+# letter_count = 0
+#
+# for letter in name:
+#     letter_count += 1
+#     print(letter)
+#
+# print(f"Количество символов в слове: {letter_count}")
+
+# Таблица умножения
+
+# numbers = "123456789"
+# for number_1 in numbers:
+#     for number_2 in numbers:
+#         print(int(number_1) * int(number_2), end =" ")
+#     print("")
+
+print("Эта программа рисует ромбик")
+
+
+def draw_diamond(size):
+    # Верхняя половина ромба
+    for i in range(size // 2 + 1):
+        print(" " * (size // 2 - i) + "*" * (2 * i + 1))
+
+    # Нижняя половина ромба
+    for i in range(size // 2 - 1, -1, -1):
+        print(" " * (size // 2 - i) + "*" * (2 * i + 1))
+
+
+try:
+    # Запрашиваем размер ромба у пользователя
+    size = int(input("Введите размер ромбика (нечетное число от 3 до 15): "))
+
+    # Проверяем корректность введенного значения
+    if size < 3 or size > 15 or size % 2 == 0:
+        print("Некорректное значение")
+    else:
+        draw_diamond(size)
+except ValueError:
     print("Некорректное значение")
+
+
