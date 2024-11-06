@@ -1,5 +1,3 @@
-
-
 # test_string_1 = "Hello, world, Space, Fuck, Duck"
 # test_string_2 = "1234567890"
 
@@ -37,8 +35,7 @@
 # # [start:stop:step]
 #
 #
-# print(name[:2:]) # - Jo
-# print(name[2::]) # - hn
-# print(name[::2]) # - Jh
-# print(name[::-1])
-
+# print(name[:2:])  # - Jo
+# print(name[2::])  # - hn
+# print(name[::2])  # - Jh
+# print(name[::-1]) # - nhoJ
